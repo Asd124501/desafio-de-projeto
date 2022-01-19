@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang= pt-br>
+    <head>
+        <link rel="shortcut icon" type= "imagem/png" href="loja.png">
+        <meta charset = utf-8>
+        <title>Contato</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>Masculino</li>
+                <li>Feminino</li>
+                <li>Infantil</li>
+                <li>Moda intima</li>
+                <li>Perfumes</li>
+                <li>Sex Shop</li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Preencha os campos abaixo com suas informações que iremos retornar o mais rápido possível</h1>
+
+            <form action = "Contato.html" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label><p>*Seu nome</p><input id="nome" type="text" name="textonome" tabindex="1" maxlength ="10" minlength="30" placeholder="Digite seu nome" required></label>
+                    <label><p>*Seu telefone</p><input type=tel tabindex="2" name="telefone"  pattern="[0-9]{2} [0-9]{5} [0-9]{4}" placeholder="(xx)xxxxx-xxxx" required></label>
+                    <label><input type="radio" name="opcaopessoal" value="cell" tabindex="3">Pessoal</label>
+                    <label><input type="radio" name="opcaotrabalho" value="cell" tabindex="4">Trabalho</label>
+                    <label><p>Digite seu email:</p><input type="email" name="textoemail" tabindex="5" placeholder="Digite seu email aqui"></label>
+
+                <label><p>Entre em contato por:</p><input type="checkbox" name="selecionat" value="s" tabindex="6"></label>Telefone
+                <label><input type= checkbox name="selecionae" value="s" tabindex="7"></label>Email
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <select id="opcao" name="opcao" tabindex="8">
+                        <optgroup label="Problemas">
+                            <option value="Pedidos">Pedidos</option>
+                            <option value="Entrega">Entrega</option>
+                            <option value="Pagamento">Pagamento</option>
+                            <option value="Site">Site</option>
+                        </optgroup>
+
+                    <textarea rows ="4" cols="50" maxlength="100" tabindex="9" placeholder="Máximo de 100 caracteres" required></textarea>
+                    <label><p>Data:</p><input type="date" tabindex="10" name="data"></label></br>
+                    </br>><input type="submit" tabindex="11" name="b" value="enviar">
+                    </select>
+
+                </fieldset>
+            </form>
+
+        </main>
+
+        <footer>MR Solutions</footer>
+    </body>
+</html>
